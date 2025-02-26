@@ -170,53 +170,16 @@ def gerar_relatorio(contratos, caminho_logo, documentos_por_função, diretorios
 
 # Ponto de Alteração
 documentos_por_função = {
-    "ELETRICISTA DE REPARO DE REDE DE SANEAMENTO" : [
-        "ASO", "FRE", "EPI", "NR6", "NR10", "NR12", "NR18", "NR33", "NR35", "OS"
-    ],
-    "OPERADOR DE REPARO DE REDE DE SANEAMENTO" : [
-        "ASO", "FRE", "EPI", "NR6", "NR12", "NR18", "NR33", "NR35", "OS"
-    ],
-    "1/2 OFICIAL DE REPARO DE REDE DE SANEAMENTO CIVIL" : [
-        "ASO", "FRE", "EPI", "NR6", "NR12", "NR18", "NR33", "NR35", "OS"
-    ],
-    "AUXILIAR DE REPARO DE REDE DE SANEAMENTO" : [
-        "ASO", "FRE", "EPI", "NR6", "NR12", "NR18", "NR33", "NR35", "OS"
-    ],
-    "ENCARREGADO DE REPARO DE REDE DE SANEAMENTO" : [
-        "ASO", "FRE", "EPI", "NR6", "NR18", "NR33", "NR35", "OS"
-    ],
-    "OPERADOR RETROESCAVADEIRA" : [
-        "ASO", "FRE", "EPI", "NR6", "NR11", "NR18", "OS"
-    ],
-    "ESTAGIARIO" : [
-        "ASO", "EPI", "NR6", "NR18", "OS"
-    ],
-    "OUTRAS": [
-        "ASO", "FRE", "EPI", "NR6", "NR18", "OS"
-    ]
-}
-diretorios_base = {
-    "OB186 - INHAÚMA" : os.path.join(
-        os.path.expanduser("~"),
-        "CONSORCIO CONCREJATOEFFICO LOTE 1",
-        "Central de Arquivos - QSMS",
-        "000 ATUAL - OBRA 186 - INHAÚMA",
-        "Documentação Funcionários"),
 
-    "OB201 - SÃO GONÇALO" : os.path.join(
-        os.path.expanduser("~"),
-        "CONSORCIO CONCREJATOEFFICO LOTE 1",
-        "Central de Arquivos - QSMS",
-        "000 ATUAL - OBRA 201 - SÃO GONÇALO",
-        "DOCUMENTAÇÃO DE FUNCIONÁRIOS",
-        "CONSÓRCIO")
+}
+diretorios_funcionarios = {
+    
 }
 diretorios_dados = {
-    "OB186 - INHAÚMA" : os.path.join(os.path.expanduser("~"), "CONSORCIO CONCREJATOEFFICO LOTE 1", "Central de Arquivos - QSMS", "000 ATUAL - OBRA 186 - INHAÚMA", "Efetivo", "QUANTITATIVO COMPARTILHAR.xlsx"), 
-    "OB201 - SÃO GONÇALO" : os.path.join(os.path.expanduser("~"), "CONSORCIO CONCREJATOEFFICO LOTE 1", "Central de Arquivos - QSMS", "000 ATUAL - OBRA 201 - SÃO GONÇALO", "EFETIVO", "QUANTITATIVO COMPARTILHAR.xlsx")
+   
 }
 contratos = ["OB186 - INHAÚMA", "OB201 - SÃO GONÇALO"]
-caminho_logo = os.path.join(os.path.expanduser("~"), "CONSORCIO CONCREJATOEFFICO LOTE 1", "Central de Arquivos - QSMS", "000 ATUAL - OBRA 201 - SÃO GONÇALO", "LOGO CONCREJATO.png")
+caminho_logo = "LOGO.png")
 
 gerar_relatorio(contratos, caminho_logo, documentos_por_função, diretorios_base, diretorios_dados)
 
