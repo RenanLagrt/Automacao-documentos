@@ -15,13 +15,9 @@ locale.setlocale(locale.LC_TIME, "pt_BR.utf8")
 def get_modelo(diretorios_modelos, documento, contrato):
     diretorio_modelos = diretorios_modelos.get(contrato)
     mapa_modelos = {
-    "NR6" : os.path.join(diretorio_modelos, "NRs - MODELOS", "NR6 - MODELO.docx"),
-    "NR18" : os.path.join(diretorio_modelos, "NRs - MODELOS", "NR18 - MODELO.docx"),
-    "NR33" : os.path.join(diretorio_modelos, "NRs - MODELOS", "NR33 - MODELO.docx"),
-    "NR35" : os.path.join(diretorio_modelos, "NRs - MODELOS", "NR35 - MODELO.docx"),
-    "OS" : os.path.join(diretorio_modelos, "OS - MODELO.docx")
+   
 }
-    return mapa_modelos.get(documento, mapa_modelos["OS"])
+    return mapa_modelos.get(documento)
 
 def substituir_texto_OS(doc, marcador, novo_texto):
     for p in doc.paragraphs:
@@ -98,8 +94,7 @@ def main(diretorios_modelos):
 
 # Ponto de alteração 
 diretorios_modelos = {
-    "OB186 - INHAÚMA": os.path.join(os.path.expanduser("~"), "CONSORCIO CONCREJATOEFFICO LOTE 1", "Central de Arquivos - QSMS","000 ATUAL - OBRA 186 - INHAÚMA","MATRIZ DE DOCUMENTOS\MODELOS"),
-    "OB201 - SÃO GONÇALO": os.path.join(os.path.expanduser("~"), "CONSORCIO CONCREJATOEFFICO LOTE 1", "Central de Arquivos - QSMS", "000 ATUAL - OBRA 201 - SÃO GONÇALO", "MATRIZ DE DOCUMENTOS", "MODELOS")
+    
 }
 
 main(diretorios_modelos)
